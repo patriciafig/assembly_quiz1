@@ -11,16 +11,16 @@ clear eax TEXTEQU <mov eax, 0>  ; macro to clear eax
 myArray SWORD 123h, 101011011b, -567d, -689d, 238h  ; declare variables here
 ArraySize = ($myArrray)/TYPE myArray
 
-.code       ;code segment 
-main PROC   ;main procedure 
+.code       ; code segment 
+main PROC   ; main procedure 
 dec ecx     ; decrement
-mov esi, 0  ;clear register 
+mov esi, 0  ; clear register 
 clear eax 	; zero out eax register before using
 
-ONE:   ; label for loop
-mov ax, [myArray + esi]   ;adress of the first element
-add esi, TYPE myArray     ;TYPE return, declared size of myArray
-add ax , [myArray + esi]  ;gets second element 
+ONE:                      ; loop label
+mov ax, [myArray + esi]   ; adress of the first element
+add esi, TYPE myArray     ; TYPE return, declared size of myArray
+add ax , [myArray + esi]  ; gets second element 
 
 call DumpRegs             ;clears the register 
 
