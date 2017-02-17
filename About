@@ -1,3 +1,6 @@
+Assembly Language
+CSCI 2525 
+
 Create an assembly program which adds pairs of numbers pre-stored in an array of appropriate size.
 Essentially you are adding A + B, B + C, C + D, and D + E.
 
