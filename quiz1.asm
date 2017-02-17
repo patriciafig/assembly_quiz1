@@ -6,7 +6,7 @@
 TITLE Quiz03
 INCLUDE Irvine32.inc
 
-clear eax TEXTEQU <mov eax, 0>  ; macro to clearr eax 
+clear eax TEXTEQU <mov eax, 0>  ; macro to clear eax 
 .data       ; data segment 
 myArray SWORD 123h, 101011011b, -567d, -689d, 238h  ; declare variables here
 ArraySize = ($myArrray)/TYPE myArray
